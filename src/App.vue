@@ -3,8 +3,25 @@
     <router-link to="/">Home</router-link> |
     <router-link to="/about">About</router-link>
   </div>
-  <router-view/>
+  <v-main-wrapper />
 </template>
+
+<script>
+import vMainWrapper from './components/v-main-wrapper'
+
+export default {
+  name: 'app',
+  components: {
+    vMainWrapper
+  },
+  computed: {
+  },
+  methods: {
+  },
+  mounted() {
+  }
+}
+</script>
 
 <style lang="scss">
 #app {
